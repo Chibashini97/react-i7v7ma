@@ -15,14 +15,14 @@ class LoginForm extends Component {
     let {email, password} = this.state;
     let {isLoginPending, isLoginSuccess, loginError} = this.props;
     return (
-      <form name="loginForm" onSubmit={this.onSubmit}>
-        <div className="form-group-collection">
-          <div className="form-group">
+      <form  onSubmit={this.onSubmit}>
+        <div >
+          <div >
             <label>Email:</label>
             <input type="email" name="email" onChange={e => this.setState({email: e.target.value})} value={email}/>
           </div>
 
-          <div className="form-group">
+          <div >
             <label>Password:</label>
             <input type="password" name="password" onChange={e => this.setState({password: e.target.value})} value={password}/>
           </div>
