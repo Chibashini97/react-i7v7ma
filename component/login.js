@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { login } from '.././reducer/reducer';
-import './login.css';
 
 class LoginForm extends Component {
 
